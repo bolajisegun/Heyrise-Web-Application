@@ -1,0 +1,96 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products Page</title>
+        <link rel="stylesheet" href="../CSS/output.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header class="bg-black text-white">
+            <nav class="">
+                <ul class="flex flex-start ml-8 gap-5 text-[1.3em] lg:ml-[80px] py-2">
+                    <li><a href="./index.html" class="font-bold">Ecommerce</a></li>
+                    <li><a href="./products.html">Shop</a></li>
+                </ul>
+                <hr>
+            </nav>
+            <div class="bg-black text-white mb-10 pb-14 pt-6">
+                <h2 class="text-[36px] font-semibold ml-8 lg:ml-[80px]">Shop Products</h2>
+                <p class="text-[14px] md:text[18px] lg:text-[18px] w-[16em] lg:w-[29em] font-normal ml-8 lg:ml-[80px]">
+                    Discover Your Next Favorite: Explore Our Curated Selection of Top-Rated Products!
+                </p>
+            </div>
+        </header>
+        <main class="">
+    <section class="">
+        <div class="">
+            <div class="flex justify-between flex-wrap items-center  w-[90%] mx-auto">
+                <h4 class="text-[22px] font-semibold">Filter</h4>
+                <div class="">
+                    <a href="#" class="text-[12px] lg:text-[14px] text-[#C4C4C4]">Clear Filter</a>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <div class="flex items-center px-3 py-2">
+                        <i class="fas fa-search"></i> 
+                        <input type="text" placeholder="Start typing to search" class="text-[15px] outline-none flex-grow px-3 py-1 bg-transparent"> 
+                    </div>
+                    <div class="">
+                        <h4 class="ml-5 font-semibold text-[14px] my-5">Categories</h4>
+                        <div class="space-y-4 space-x-5">
+                            <label class="flex items-center space-x-2 ml-5">
+                                <input type="checkbox" name="category" class="form-checkbox text-blue-600" />
+                                <span class="text-[13px]">Category 1</span>
+                            </label>
+
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" name="category" class="form-checkbox text-blue-600" />
+                                <span class="text-[13px]">Category 2</span>
+                            </label>
+
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" name="category" class="form-checkbox text-blue-600" />
+                                <span class="text-[13px]">Category 3</span>
+                            </label>
+
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" name="category" class="form-checkbox text-blue-600" />
+                                <span class="text-[13px]">Category 4</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="flex justify-end items-end flex-col space-x-4 px-4 mb-10">
+                <!-- Dropdown for Sorting Options -->
+                <div class="flex border border-gray-300 w-[10em] items-center mt-4">
+                    <span class="text-[13px] font-[#c4c4c4]">Sort By</span>
+                    <select class="text-[13px] appearance-none font-bold bg-white text-gray-700 py-2 pl-3 leading-tight focus:outline-none focus:border-blue-500">
+                        <option class="font-bold">Ascending</option>
+                        <option class="font-bold">Descending</option>
+                    </select>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+                <!-- product count -->
+                <h4 class="text-[13px] mt-2 font-bold">Products Count: 0</h4>
+            </div>
+        </section>
+
+        <!-- products section -->
+        <section id="products-section">
+            <!-- Product cards will be rendered here dynamically -->
+        </section>
+    </main>
+
+
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="../JS/products.js"></script>
+
+    </body>
+    </html>
